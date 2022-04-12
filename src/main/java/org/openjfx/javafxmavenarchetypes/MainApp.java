@@ -13,11 +13,12 @@ public class MainApp extends Application {
     public void start(Stage stage) throws IOException {
 //        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("main-view.fxml"));
 
-        Parent root = FXMLLoader.load(getClass().getResource("sign-up.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("sign-in.fxml"));
 //        Scene scene = new Scene(root.load());
         Scene scene = new Scene(root);
-        stage.setTitle("Sign Up");
+        stage.setTitle("Sign In");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
